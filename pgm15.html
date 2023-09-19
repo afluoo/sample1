@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+    <style>
+        .first {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: animation1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animation1 {
+            1% {
+                background-color: red;
+                left: 100px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: blue;
+                left: 100px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: yellow;
+                left: 100px;
+                top: 300px;
+            }
+
+            75% {
+                background-color: orange;
+                left: 0px;
+                top: 100px;
+            }
+
+            100% {
+                background-color: red;
+                left: 100px;
+                top: 100px;
+            }
+
+        }
+
+        .second {
+            height: 250px;
+            width: 250px;
+            background-color: black;
+            animation-name: animation2;
+            animation-duration: 20s;
+            position: relative;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animation2 {
+            1% {
+                background-color: blue;
+                left: 100px;
+                right: 100px;
+            }
+
+            25% {
+                background-color: coral;
+                left: 100px;
+                right: 100px;
+            }
+
+            30% {
+                background-color: green;
+                left: 100px;
+                right: 100px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+
+    </div>
+    <div class="second"></div>
+</body>
+
+</html>
